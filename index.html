@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kebarongan</title>
+    <title>Pesanan Kopi - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>guntoro siregar kapal laut masitoh</h1>
+    <header>
+        <h1>Kopi Nusantara</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Pesan Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Selamat Datang di Kopi Nusantara</h2>
+        <p>Nikmati cita rasa kopi terbaik dari seluruh Indonesia. Pesan sekarang dan rasakan kelezatannya!</p>
+        <a href="#order" class="btn">Pesan Kopi</a>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Menu Kopi Kami</h2>
+        <div class="menu-items">
+            <div class="item">
+                <h3>Espresso</h3>
+                <p>Kopi hitam pekat dengan aroma kuat.</p>
+                <span>Rp 25.000</span>
+            </div>
+            <div class="item">
+                <h3>Cappuccino</h3>
+                <p>Kopi dengan susu dan busa yang lembut.</p>
+                <span>Rp 35.000</span>
+            </div>
+            <div class="item">
+                <h3>Latte</h3>
+                <p>Kopi dengan susu yang creamy.</p>
+                <span>Rp 40.000</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <h2>Pesan Kopi Anda</h2>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="coffee">Pilih Kopi:</label>
+            <select id="coffee" name="coffee">
+                <option value="espresso">Espresso</option>
+                <option value="cappuccino">Cappuccino</option>
+                <option value="latte">Latte</option>
+            </select>
+
+            <label for="quantity">Jumlah:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit" class="btn">Kirim Pesanan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kopi Nusantara. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
